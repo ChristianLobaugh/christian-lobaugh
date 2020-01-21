@@ -1,7 +1,10 @@
+import FaImage from 'react-icons/lib/fa/image'
+
 export default {
   name: 'mainImage',
   type: 'image',
   title: 'Image',
+  icon: FaImage,
   options: {
     hotspot: true
   },

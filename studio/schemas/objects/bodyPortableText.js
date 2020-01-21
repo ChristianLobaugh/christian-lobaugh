@@ -1,3 +1,5 @@
+import FaCode from 'react-icons/lib/fa/code'
+
 export default {
   name: 'bodyPortableText',
   type: 'array',
@@ -61,10 +63,12 @@ export default {
     {
       type: 'code',
       title: 'Code block',
+      icon: FaCode,
       options: { theme: 'github' }
     },
     {
-      type: 'youtube'
+      type: 'youtube',
+      title: 'YouTube embed'
     }
   ]
 }

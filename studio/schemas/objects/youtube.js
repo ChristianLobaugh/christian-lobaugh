@@ -1,6 +1,7 @@
 import React from 'react'
 import getYouTubeId from 'get-youtube-id'
 import YouTube from 'react-youtube'
+import MdOndemandVideo from 'react-icons/lib/md/ondemand-video'
 
 const Preview = ({value}) => {
 	const { url } = value
@@ -12,6 +13,7 @@ export default {
   name: 'youtube',
   type: 'object',
   title: 'YouTube Embed',
+  icon: MdOndemandVideo,
   fields: [
     {
       name: 'url',
