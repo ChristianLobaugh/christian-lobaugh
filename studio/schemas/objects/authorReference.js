@@ -1,7 +1,10 @@
+import { MdPerson } from 'react-icons/lib/md'
+
 export default {
   name: 'authorReference',
   type: 'object',
   title: 'Author reference',
+  icon: MdPerson, 
   fields: [
     {
       name: 'author',

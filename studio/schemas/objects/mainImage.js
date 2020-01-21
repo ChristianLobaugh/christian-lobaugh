@@ -1,7 +1,10 @@
+import { FiImage } from 'react-icons/fi'
+
 export default {
   name: 'mainImage',
   type: 'image',
   title: 'Image',
+  icon: FiImage,
   options: {
     hotspot: true
   },
