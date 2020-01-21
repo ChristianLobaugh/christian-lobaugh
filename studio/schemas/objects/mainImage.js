@@ -4,7 +4,7 @@ export default {
   name: 'mainImage',
   type: 'image',
   title: 'Image',
-  icon: FiImage,
+  icon: FaImage,
   options: {
     hotspot: true
   },
