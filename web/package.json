@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "gatsby-image": "^2.0.41",
+    "gatsby-plugin-netlify": "^2.1.31",
     "get-youtube-id": "^1.0.1",
     "react-syntax-highlighter": "^12.2.1",
     "react-youtube": "^7.9.0"
