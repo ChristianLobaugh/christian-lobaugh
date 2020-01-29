@@ -4,8 +4,11 @@ import Icon from './icon'
 import {cn} from '../lib/helpers'
 
 import styles from './header.module.css'
+import { globalHistory as history } from '@reach/router'
 
-const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
+const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => {
+  const { location } = history
+  return (
   <div className={styles.root}>
     <div className={styles.wrapper}>
       <div className={styles.branding}>
@@ -19,12 +22,18 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
           <li>
-            <Link to='/archive/'>Archive</Link>
+            <Link to='/blog/'>Blog</Link>
           </li>
+          {location.pathname.includes('/blog') && 
+            <li>
+              <Link to='/blog/archive/'>Archive</Link>
+            </li>
+          }
         </ul>
       </nav>
     </div>
   </div>
-)
+  )
+  }
 
 export default Header
