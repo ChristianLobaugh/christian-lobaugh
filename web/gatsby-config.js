@@ -75,7 +75,7 @@ module.exports = {
                 .filter(({ node }) => filterOutDocsPublishedInTheFuture(node))
                 .filter(({ node }) => node.slug)
                 .map(({ node }) => {
-                  const { title, publishedAt, slug, _rawBody } = node
+                  const { title, publishedAt, slug, _rawBody, _rawExcerpt } = node
                   const url =
                     site.siteMetadata.siteUrl +
                     getBlogUrl(publishedAt, slug.current)
@@ -84,6 +84,19 @@ module.exports = {
                     date: publishedAt,
                     url,
                     guid: url,
+                    description: 
+                      PortableText({
+                        blocks: _rawExcerpt,
+                        serializers: {
+                          types: {
+                            code: ({ node }) =>
+                              h(
+                                'pre',
+                                h('code', { lang: node.language }, node.code)
+                              )
+                            }
+                          }
+                        }),
                     custom_elements: [
                       {
                         'content:encoded': 
