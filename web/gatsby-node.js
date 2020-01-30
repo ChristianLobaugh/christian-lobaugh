@@ -38,7 +38,7 @@ async function createBlogPostPages (graphql, actions, reporter) {
       const dateSegment = format(publishedAt, 'YYYY/MM')
       const path = `/blog/${dateSegment}/${slug.current}/`
 
-      reporter.info(`Creating blog post page: ${path}`)
+      // reporter.info(`Creating blog post page: ${path}`)
 
       createPage({
         path,
