@@ -111,7 +111,7 @@ module.exports = {
                                   {
                                     href: node.url
                                   },
-                                  'Link to video titled: "' + node.alt + '"'
+                                  'Watch this video on YouTube'
                                 )
                             }
                           }
