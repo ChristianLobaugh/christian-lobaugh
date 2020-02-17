@@ -1,2 +1,5 @@
 # Redirect default Netlify subdomain to primary domain
 https://christian-lobaugh.netlify.com/* https://christianlobaugh.com/:splat 301!
+
+# Redirect /resume to actual location
+/resume/* https://christianlobaugh-resume.netlify.com/:splat 200
