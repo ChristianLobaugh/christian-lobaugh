@@ -2,4 +2,4 @@
 https://christian-lobaugh.netlify.com/* https://christianlobaugh.com/:splat 301!
 
 # Redirect /resume to actual location
-/resume/* https://christianlobaugh-resume.netlify.com/:splat 200
+/resume/* https://christianlobaugh-resume.netlify.com/resume/:splat 200
