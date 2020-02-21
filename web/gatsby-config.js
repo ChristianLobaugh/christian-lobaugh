@@ -43,6 +43,19 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `ChristianLobaugh`,
+        short_name: `ChristianLobaugh`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#2E52A3`,
+        display: `standalone`,
+        icon: `src/images/favicon.png`,
+        theme_color_in_head: false, // This will avoid adding theme-color meta tag.
+      },
+    },
+    {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
         // Change `siteUrl` to your domain
