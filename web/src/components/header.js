@@ -29,6 +29,9 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => {
               <Link to='/blog/archive/'>Archive</Link>
             </li>
           }
+          <li>
+            <a href="https://christianlobaugh.com/resume">Resume</a>
+          </li>
         </ul>
       </nav>
     </div>
